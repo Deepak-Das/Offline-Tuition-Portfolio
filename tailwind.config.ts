@@ -12,6 +12,21 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-pattern": "url('/assets/hero_bg.png')",
+      },
+      colors: {
+        primary: {
+          900: "#FF7239",
+          100: "#FFF7F4",
+        },
+        pink: {
+          900: "#F24D5D",
+          100: "#FEF5F6",
+        },
+        voilet: {
+          900: "#8E65FF",
+          100: "#F8F7FF",
+        },
       },
     },
   },
