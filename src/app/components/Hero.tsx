@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="bg-hero-pattern  justify-centerjustify-center flex h-screen w-full flex-col  items-center bg-yellow-200 px-20 md:flex md:flex-row  md:items-center md:justify-center md:gap-20 md:py-24">
+    <section className="justify-centerjustify-center  flex h-screen w-full flex-col items-center  bg-yellow-200 bg-hero-pattern px-20 md:flex md:flex-row  md:items-center md:justify-center md:gap-20 md:py-24">
       <Image
         src={"/assets/feature1.png"}
         height={8}
-        width={450}
+        width={500}
         alt="feature1.png"
       />
       <div className="  flex flex-col  pt-4 md:pt-16">

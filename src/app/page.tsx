@@ -10,6 +10,7 @@ import Image from "next/image";
 import { IconBox } from "./components/IconBox";
 import { SubSection } from "./components/SubSection";
 import { CouserSection } from "./components/CouserSection";
+import Banner from "./components/Banner";
 
 export const metadata: Metadata = {
   title: "welcome Students ",
@@ -22,6 +23,9 @@ function Home() {
       <Introduction />
       <SubSection />
       <CouserSection />
+      <div>
+        <Banner />
+      </div>
     </main>
   );
 }
