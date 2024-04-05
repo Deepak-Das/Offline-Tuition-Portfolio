@@ -18,14 +18,17 @@ const config: Config = {
         primary: {
           900: "#FF7239",
           100: "#FFF7F4",
+          200: "#FFE3D7",
         },
         pink: {
           900: "#F24D5D",
           100: "#FEF5F6",
+          200: "#FCDBDF",
         },
         voilet: {
           900: "#8E65FF",
           100: "#F8F7FF",
+          200: "#F4F0FF",
         },
       },
     },
