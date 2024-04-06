@@ -13,6 +13,8 @@ import { CouserSection } from "./components/CouserSection";
 import Banner from "./components/Banner";
 import { bannerlist1 } from "@/util/util";
 import InstructorSection from "./components/InstructorSection";
+import Testimonial from "./components/Testimonial";
+import Contact from "./components/Contact";
 
 export const metadata: Metadata = {
   title: "welcome Students ",
@@ -27,6 +29,8 @@ function Home() {
       <CouserSection />
       <Banner {...bannerlist1} />
       <InstructorSection />
+      <Testimonial />
+      <Contact />
     </main>
   );
 }
