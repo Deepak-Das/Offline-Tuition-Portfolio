@@ -11,7 +11,7 @@ import {
 import { IconType } from "react-icons";
 import { BsPuzzle } from "react-icons/bs";
 
-const Background = cva("h-min rounded-sm p-5  md:w-[calc(60%)]", {
+const Background = cva("h-min rounded-sm p-5  md:w-[calc(45%)]", {
   variants: {
     variant: {
       default: "bg-primary-100",

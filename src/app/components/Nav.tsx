@@ -40,7 +40,7 @@ const Nav = () => {
       </div>
       {/* <ul className="text flex gap-[36px] font-medium text-gray-400"> */}
       <ul
-        className={` flex flex-col py-2 font-medium md:flex md:flex-row md:gap-9 md:text-gray-400 ${col === true ? "hidden" : ""}`}
+        className={` flex flex-col py-2 text-xl font-medium md:flex md:flex-row md:gap-9 md:text-gray-400 ${col === true ? "hidden" : ""}`}
       >
         {memu.map((item) => (
           <li
@@ -55,7 +55,7 @@ const Nav = () => {
         Try Demo Class
       </button> */}
       <button
-        className={`bg-primary-900 rounded-full px-4 py-2 font-medium text-white  ${col === true ? "hidden" : ""} `}
+        className={`rounded-full bg-primary-900 px-4 py-2 font-medium text-white  ${col === true ? "hidden" : ""} `}
       >
         Try Demo Class
       </button>

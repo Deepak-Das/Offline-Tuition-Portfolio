@@ -11,6 +11,8 @@ import { IconBox } from "./components/IconBox";
 import { SubSection } from "./components/SubSection";
 import { CouserSection } from "./components/CouserSection";
 import Banner from "./components/Banner";
+import { bannerlist1 } from "@/util/util";
+import InstructorSection from "./components/InstructorSection";
 
 export const metadata: Metadata = {
   title: "welcome Students ",
@@ -23,9 +25,8 @@ function Home() {
       <Introduction />
       <SubSection />
       <CouserSection />
-      <div>
-        <Banner />
-      </div>
+      <Banner {...bannerlist1} />
+      <InstructorSection />
     </main>
   );
 }
