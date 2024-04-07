@@ -29,6 +29,7 @@ const Contact = () => {
         />
         <input
           type="submit"
+          value={"Submit to whats'aap"}
           className="rounded-full bg-primary-900 p-1 text-lg  text-white"
         />
       </form>

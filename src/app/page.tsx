@@ -1,20 +1,13 @@
-import { Metadata } from "next";
-import Hero from "./components/Hero";
-import FeatureCard from "./components/FeatureCard";
-import InfoCard from "./components/InfoCard";
-import { BsPuzzle } from "react-icons/bs";
-import { BiCode } from "react-icons/bi";
-import { Introduction } from "./components/Introduction";
-import { CgCodeClimate } from "react-icons/cg";
-import Image from "next/image";
-import { IconBox } from "./components/IconBox";
-import { SubSection } from "./components/SubSection";
-import { CouserSection } from "./components/CouserSection";
-import Banner from "./components/Banner";
 import { bannerlist1 } from "@/util/util";
-import InstructorSection from "./components/InstructorSection";
-import Testimonial from "./components/Testimonial";
+import { Metadata } from "next";
+import Banner from "./components/Banner";
 import Contact from "./components/Contact";
+import { CouserSection } from "./components/CouserSection";
+import Hero from "./components/Hero";
+import InstructorSection from "./components/InstructorSection";
+import { Introduction } from "./components/Introduction";
+import { SubSection } from "./components/SubSection";
+import Testimonial from "./components/Testimonial";
 
 export const metadata: Metadata = {
   title: "welcome Students ",

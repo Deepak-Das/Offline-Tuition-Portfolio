@@ -45,7 +45,7 @@ const Nav = () => {
         {memu.map((item) => (
           <li
             key={item.name}
-            className={`w-full rounded-lg p-2 text-center hover:bg-blue-100 ${activeLink === item.link ? "bg-blue-400 text-white" : ""}`}
+            className={`w-full cursor-pointer rounded-lg p-2 text-center transition-all duration-100 hover:bg-blue-100 ${activeLink === item.link ? "bg-blue-400 text-white hover:bg-blue-400" : ""}`}
           >
             <Link href={item.link}>{item.name}</Link>
           </li>
