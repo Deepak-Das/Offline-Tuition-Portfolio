@@ -1,8 +1,17 @@
+import { cn } from "@/util/util";
 import Image from "next/image";
+import { FC, HTMLAttributes } from "react";
 
-const Contact = () => {
+interface ContactProps extends HTMLAttributes<HTMLElement> {}
+
+const Contact: FC<ContactProps> = ({ className }) => {
   return (
-    <div className="mb-16 flex flex-col items-center gap-4 px-20 md:flex md:flex-row md:justify-between ">
+    <div
+      className={cn(
+        "flex flex-col items-center gap-4 px-20 md:flex md:flex-row md:justify-between",
+        className,
+      )}
+    >
       <div className="flex flex-col   text-center">
         <img src="/assets/conatact_vector.png" alt="" />
         <p className="text-lg text-gray-500">

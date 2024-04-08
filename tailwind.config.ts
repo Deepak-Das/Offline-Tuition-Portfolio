@@ -30,6 +30,9 @@ const config: Config = {
           100: "#F8F7FF",
           200: "#F4F0FF",
         },
+        cyan: {
+          900: "#00A89D",
+        },
       },
     },
   },

@@ -5,7 +5,7 @@ import FeatureCard from "./FeatureCard";
 import InfoCard from "./InfoCard";
 export function Introduction({}) {
   return (
-    <div className="flex flex-col gap-5 px-20 py-10  md:flex md:flex-row md:items-end">
+    <div className="flex flex-col gap-5 px-20   md:flex md:flex-row md:items-end">
       <FeatureCard
         title="Great Deals For You"
         content="Learn concept at your on speed, forget about old school technique we

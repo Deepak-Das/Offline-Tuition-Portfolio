@@ -1,11 +1,11 @@
 import { cn } from "@/util/util";
 import { cva, VariantProps } from "class-variance-authority";
 import Image from "next/image";
-import React, { FC } from "react";
+import React, { FC, HTMLAttributes, HtmlHTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
-const bannerVariants = cva(
-  "flex flex-col items-center justify-center gap-10 rounded-lg  p-10 md:mx-24 md:mb-20 md:flex md:flex-row md:gap-20",
+const BannerVariants = cva(
+  "flex flex-col items-center justify-center gap-10 md:rounded-lg  p-10 md:mx-24  md:flex md:flex-row md:gap-20",
   {
     variants: {
       bg: {
@@ -13,25 +13,31 @@ const bannerVariants = cva(
         pink: "bg-pink-200",
         voilet: "bg-voilet-200",
       },
-      dir: {
+      dirc: {
         ltr: "",
         rtl: "md:flex-row-reverse",
       },
     },
     defaultVariants: {
       bg: "defualt",
-      dir: "ltr",
+      dirc: "ltr",
     },
   },
 );
 
-interface BannerProps extends VariantProps<typeof bannerVariants> {
+interface BannerProps
+  extends HTMLAttributes<HTMLDivElement>,
+    VariantProps<typeof BannerVariants> {
   imgUrl: string;
   heading: string;
-  content: string;
+  content?: string;
   list: {
     text: string;
-    bullentColor: "bg-primary-900" | "bg-pink-900" | "bg-voilet-900";
+    bullentColor:
+      | "bg-primary-900"
+      | "bg-pink-900"
+      | "bg-voilet-900"
+      | "bg-cyan-900";
   }[];
 }
 
@@ -41,15 +47,16 @@ const Banner: FC<BannerProps> = ({
   content,
   list,
   bg,
-  dir,
+  dirc,
+  className,
   ...props
 }) => {
   return (
-    <div className={cn(bannerVariants({ bg, dir }))}>
+    <div className={cn(BannerVariants({ bg, dirc, className }))}>
       <Image src={imgUrl} alt="banner.jpg" height={0} width={600} />
       <div className="flex flex-col items-start justify-start gap-4 md:gap-4">
         <h4 className="text-3xl font-medium">{heading}</h4>
-        <p className="text-xl">{content}</p>
+        {content && <p className="text-xl">{content}</p>}
         {list.map((item) => (
           <div className="flex gap-2">
             <div

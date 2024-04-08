@@ -2,7 +2,7 @@ import React from "react";
 import { IconBox } from "./IconBox";
 export function SubSection({}) {
   return (
-    <div className="mt-16 flex w-full flex-col items-center justify-center gap-4 px-20">
+    <div className=" flex w-full flex-col items-center justify-center gap-4 px-20">
       <h6 className="text-primary-900 underline">All Subject</h6>
       <h3 className="text-2xl font-medium">Explore Our Subject</h3>
       <div className="flex  flex-wrap  items-center justify-center gap-5">

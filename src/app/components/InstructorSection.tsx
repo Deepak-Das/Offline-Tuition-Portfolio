@@ -5,7 +5,7 @@ import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 
 const InstructorSection = () => {
   return (
-    <div className="mb-16 flex w-full flex-col items-center justify-center gap-4 px-4 md:px-20">
+    <div className=" flex w-full flex-col items-center justify-center gap-4 px-4 md:px-20">
       <div className="flex w-full items-end justify-between">
         <div>
           <h6 className="text-primary-900 underline">All Instructor</h6>

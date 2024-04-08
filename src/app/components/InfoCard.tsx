@@ -1,15 +1,11 @@
 import { cn } from "@/util/util";
 import { VariantProps, cva } from "class-variance-authority";
 import {
-  ButtonHTMLAttributes,
   FC,
   HTMLAttributes,
-  HtmlHTMLAttributes,
-  ReactElement,
-  ReactNode,
+  ReactElement
 } from "react";
 import { IconType } from "react-icons";
-import { BsPuzzle } from "react-icons/bs";
 
 const Background = cva("h-min rounded-sm p-5  md:w-[calc(45%)]", {
   variants: {

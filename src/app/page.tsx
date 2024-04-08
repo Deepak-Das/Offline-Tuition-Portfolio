@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 function Home() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col gap-y-20">
       <Hero />
       <Introduction />
       <SubSection />
@@ -24,6 +24,7 @@ function Home() {
       <InstructorSection />
       <Testimonial />
       <Contact />
+      <div className="mb-16"></div>
     </main>
   );
 }

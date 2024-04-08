@@ -33,8 +33,8 @@ const Nav = () => {
 
   return (
     // <nav className="flex items-center justify-between border-b px-20 py-2 shadow-md">
-    <nav className="flex flex-col  border-b px-1 py-2 shadow-md md:flex md:flex-row md:items-center md:justify-between md:px-20 md:py-0">
-      <div className="flex w-full items-center justify-between md:w-max">
+    <nav className="flex flex-col   border-b px-1 py-2 shadow-md md:flex md:flex-row md:items-center md:justify-between md:px-20 md:py-0">
+      <div className="flex w-full items-center justify-between border-b pb-2 md:w-max md:border-none md:p-0">
         <h4 className="text-xl font-bold ">Gen-Z Mentor</h4>
         <MenuBarIcon />
       </div>
@@ -45,7 +45,7 @@ const Nav = () => {
         {memu.map((item) => (
           <li
             key={item.name}
-            className={`w-full cursor-pointer rounded-lg p-2 text-center transition-all duration-100 hover:bg-blue-100 ${activeLink === item.link ? "bg-blue-400 text-white hover:bg-blue-400" : ""}`}
+            className={`w-full cursor-pointer rounded-lg p-2 text-center transition-all duration-100 hover:bg-blue-100 hover:md:text-black ${activeLink === item.link ? "bg-blue-400 text-white hover:bg-blue-400" : ""}`}
           >
             <Link href={item.link}>{item.name}</Link>
           </li>

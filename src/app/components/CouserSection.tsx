@@ -87,7 +87,7 @@ const ComputerList: ListType[] = [
 
 export function CouserSection({}) {
   return (
-    <div className="my-16 flex w-full flex-col items-center justify-center gap-4 px-20">
+    <div className="flex w-full flex-col items-center justify-center gap-4 px-20">
       <h6 className="text-primary-900 underline">All Courses</h6>
       <h3 className="text-2xl font-medium">Explore Our Popular Batch</h3>
       <div className="flex flex-wrap gap-4">
